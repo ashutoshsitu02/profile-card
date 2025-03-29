@@ -1,12 +1,65 @@
-# React + Vite
+# Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple profile card built using React. This project showcases an avatar, an introduction section, and a skill list.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays a profile avatar
+- Provides a short introduction
+- Lists skills with styling
+- Built using React components for modularity
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Clone the Repository
+
+```sh
+git clone https://github.com/ashutoshsitu02/profile-card.git
+cd profile-card
+```
+
+### Install Dependencies
+
+```sh
+npm install
+```
+
+## Usage
+
+### Run the Application
+
+```sh
+npm start
+```
+
+This will start the development server, and you can view the profile card in the browser at `http://localhost:3000/`.
+
+## Project Structure
+
+```
+profile-card/
+├── src/
+│   ├── components/
+│   │   ├── Avatar.js
+│   │   ├── Intro.js
+│   │   ├── SkillList.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+├── public/
+├── package.json
+└── README.md
+```
+
+## Technologies Used
+
+- React
+- CSS
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests for improvements.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).

@@ -1,22 +1,19 @@
-const SkillList = () => {
+const SkillList = ({ skills }) => {
+  const mySkill = skills.map((skill, index) => {
+    return (
+      <span key={index} style={{ backgroundColor: skill.color }}>
+        {skill.skill}
+        {skill.level.toUpperCase() == "INTERMEDIATE" && <span>&#128077;</span>}
+        {skill.level.toUpperCase() == "ADVANCED" && <span>&#128170;</span>}
+        {skill.level.toUpperCase() == "BEGINNER" && <span>&#128118;</span>}
+      </span>
+    );
+  });
+
   return (
     <>
       <div className="skill-list">
-        <div className="skill">
-          <span style={{ backgroundColor: "orange" }}>HTML+CSS &#128512;</span>
-          <span style={{ backgroundColor: "blue", color: "white" }}>
-            JavaScript &#128170;
-          </span>
-          <span style={{ backgroundColor: "yellow" }}>
-            Web Desgin &#128170;
-          </span>
-          <span style={{ backgroundColor: "green" }}>
-            Git and GitHub &#128170;
-          </span>
-          <span style={{ backgroundColor: "pink" }}>React &#128170;</span>
-          <span style={{ backgroundColor: "volvet" }}>Node.js &#128170;</span>
-          <span style={{ backgroundColor: "red" }}>Express.js &#128170;</span>
-        </div>
+        <div className="skill">{mySkill}</div>
       </div>
     </>
   );

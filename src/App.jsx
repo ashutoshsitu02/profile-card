@@ -2,6 +2,7 @@ import "./App.css";
 import Intro from "./components/Intro";
 import Avatar from "./components/Avatar";
 import SkillList from "./components/SkillList";
+import skills from "./assets/skills";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Avatar />
       <div className="data">
         <Intro />
-        <SkillList />
+        <SkillList skills={skills} />
       </div>
     </div>
   );
